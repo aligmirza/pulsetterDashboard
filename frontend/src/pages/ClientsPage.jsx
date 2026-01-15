@@ -160,7 +160,7 @@ export default function ClientsPage() {
         setSelectedClient(null);
         setCampaigns([]);
       }
-      await loadClients();
+      await refreshClients(token);
     } catch (err) {
       setError(err.message || 'Failed to delete client');
       showToast(err.message || 'Failed to delete client', 'error');

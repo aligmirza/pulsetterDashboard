@@ -134,7 +134,6 @@ export default function UsersPage() {
                 className="secondary"
                 onClick={() => {
                   setEditingId(null);
-                  setEditingId(null);
                   setForm({ email: '', name: '', password: '', role: 'client', client_id: '' });
                 }}
               >
